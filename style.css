@@ -3,29 +3,642 @@
   margin: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .menu {
-  background-color: #e9183b;
-  height: 75px;
+  background-color: #357a32;
+  height: 55px;
   width: 100vw;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 .menu .menu-items {
+  margin: 0;
   display: flex;
-  border: 1px solid white;
   list-style: none;
+  font-size: 1rem;
+  padding: 2rem;
 }
 .menu .menu-items li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 10px;
-  border: 1px solid white;
+}
+.menu .menu-items li :hover {
+  color: rgb(16, 44, 16);
+  border-bottom: none;
+  border-bottom: 2px solid #6fcfc7;
 }
 .menu .menu-items li a {
   text-decoration: none;
   color: aliceblue;
+}
+
+.logo {
+  font-size: 2rem;
+  padding: 3rem;
+  color: #2a301e;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home .imagenes-ESPE {
+  width: 35%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.home .imagenes-ESPE img {
+  width: 100%;
+  height: auto;
+}
+
+.codigo_etica {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-top: 5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.codigo_etica .ilustracion {
+  display: block;
+  width: 80%;
+  margin: 10x auto;
+}
+
+.CE1 path {
+  fill: #82aa81;
+  -webkit-animation: brillo 2s infinite;
+          animation: brillo 2s infinite;
+}
+
+.CE2 path {
+  fill: #4b704a;
+  -webkit-animation: brillo2 2s infinite;
+          animation: brillo2 2s infinite;
+}
+
+.CE3 path {
+  fill: #52a051;
+  -webkit-animation: brillo3 2s infinite;
+          animation: brillo3 2s infinite;
+}
+
+.CE4 path {
+  fill: #285528;
+  -webkit-animation: brillo4 2s infinite;
+          animation: brillo4 2s infinite;
+}
+
+.CE5 path {
+  fill: #516451;
+  -webkit-animation: brillo5 2s infinite;
+          animation: brillo5 2s infinite;
+}
+
+.CE6 path {
+  fill: #6fc56d;
+  -webkit-animation: brillo6 2s infinite;
+          animation: brillo6 2s infinite;
+}
+
+.CE7 path {
+  fill: #223021;
+  -webkit-animation: brillo7 2s infinite;
+          animation: brillo7 2s infinite;
+}
+
+.CE8 path {
+  fill: #375736;
+  -webkit-animation: brillo8 2s infinite;
+          animation: brillo8 2s infinite;
+}
+
+.CE9 path {
+  fill: #385338;
+  -webkit-animation: brillo9 2s infinite;
+          animation: brillo9 2s infinite;
+}
+
+@-webkit-keyframes brillo {
+  0% {
+    fill: #9c61eb;
+  }
+  50% {
+    fill: #2c1a44;
+  }
+  100% {
+    fill: #9c61eb;
+  }
+}
+
+@keyframes brillo {
+  0% {
+    fill: #9c61eb;
+  }
+  50% {
+    fill: #2c1a44;
+  }
+  100% {
+    fill: #9c61eb;
+  }
+}
+@-webkit-keyframes brillo1 {
+  0% {
+    fill: #caf762;
+  }
+  50% {
+    fill: #191f0c;
+  }
+  100% {
+    fill: #caf762;
+  }
+}
+@keyframes brillo1 {
+  0% {
+    fill: #caf762;
+  }
+  50% {
+    fill: #191f0c;
+  }
+  100% {
+    fill: #caf762;
+  }
+}
+@-webkit-keyframes brillo2 {
+  0% {
+    fill: #f33838;
+  }
+  50% {
+    fill: #4d0b0b;
+  }
+  100% {
+    fill: #f33838;
+  }
+}
+@keyframes brillo2 {
+  0% {
+    fill: #f33838;
+  }
+  50% {
+    fill: #4d0b0b;
+  }
+  100% {
+    fill: #f33838;
+  }
+}
+@-webkit-keyframes brillo3 {
+  0% {
+    fill: #357a32;
+  }
+  50% {
+    fill: #0e360d;
+  }
+  100% {
+    fill: #82aa81;
+  }
+}
+@keyframes brillo3 {
+  0% {
+    fill: #357a32;
+  }
+  50% {
+    fill: #0e360d;
+  }
+  100% {
+    fill: #82aa81;
+  }
+}
+@-webkit-keyframes brillo4 {
+  0% {
+    fill: #dd38b4;
+  }
+  50% {
+    fill: #382032;
+  }
+  100% {
+    fill: #dd38b4;
+  }
+}
+@keyframes brillo4 {
+  0% {
+    fill: #dd38b4;
+  }
+  50% {
+    fill: #382032;
+  }
+  100% {
+    fill: #dd38b4;
+  }
+}
+@-webkit-keyframes brillo5 {
+  0% {
+    fill: #cf4871;
+  }
+  50% {
+    fill: #220b12;
+  }
+  100% {
+    fill: #cf4871;
+  }
+}
+@keyframes brillo5 {
+  0% {
+    fill: #cf4871;
+  }
+  50% {
+    fill: #220b12;
+  }
+  100% {
+    fill: #cf4871;
+  }
+}
+@-webkit-keyframes brillo6 {
+  0% {
+    fill: #aaaeee;
+  }
+  50% {
+    fill: #181822;
+  }
+  100% {
+    fill: #aaaeee;
+  }
+}
+@keyframes brillo6 {
+  0% {
+    fill: #aaaeee;
+  }
+  50% {
+    fill: #181822;
+  }
+  100% {
+    fill: #aaaeee;
+  }
+}
+@-webkit-keyframes brillo7 {
+  0% {
+    fill: #d40d0d;
+  }
+  50% {
+    fill: #301616;
+  }
+  100% {
+    fill: #d40d0d;
+  }
+}
+@keyframes brillo7 {
+  0% {
+    fill: #d40d0d;
+  }
+  50% {
+    fill: #301616;
+  }
+  100% {
+    fill: #d40d0d;
+  }
+}
+@-webkit-keyframes brillo8 {
+  0% {
+    fill: #bce9bb;
+  }
+  50% {
+    fill: #485747;
+  }
+  100% {
+    fill: #bce9bb;
+  }
+}
+@keyframes brillo8 {
+  0% {
+    fill: #bce9bb;
+  }
+  50% {
+    fill: #485747;
+  }
+  100% {
+    fill: #bce9bb;
+  }
+}
+@-webkit-keyframes brillo9 {
+  0% {
+    fill: #4d03fa;
+  }
+  50% {
+    fill: #090318;
+  }
+  100% {
+    fill: #4d03fa;
+  }
+}
+@keyframes brillo9 {
+  0% {
+    fill: #4d03fa;
+  }
+  50% {
+    fill: #090318;
+  }
+  100% {
+    fill: #4d03fa;
+  }
+}
+.section_items {
+  width: 100%;
+  height: 100vh;
+}
+
+.container_etica {
+  width: 24rem;
+  border: 2px solid rgb(64, 131, 86);
+  border-radius: 5%;
+  padding: 2rem;
+  margin: 5rem;
+  text-align: justify;
+}
+
+.selec {
+  display: block;
+  position: absolute;
+  top: 195vh;
+  left: 50%;
+  border-bottom: 2px solid rgb(57, 10, 78);
+}
+
+.mostrar {
+  display: block;
+  position: absolute;
+  top: 155vh;
+  left: 70%;
+}
+
+.mov1 {
+  order: 1;
+}
+
+#manoizquierda {
+  -webkit-animation: brazoizquierdo 3s infinite;
+          animation: brazoizquierdo 3s infinite;
+  transform-box: fill-box;
+}
+
+#manoDerecha {
+  -webkit-animation: brazoderecho 3s infinite;
+          animation: brazoderecho 3s infinite;
+  transform-box: fill-box;
+  transform-origin: 90% 10%;
+}
+
+@-webkit-keyframes brazoizquierdo {
+  0% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes brazoizquierdo {
+  0% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+@-webkit-keyframes brazoderecho {
+  0% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes brazoderecho {
+  0% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+#Vector_31 {
+  -webkit-animation: cambio 3s infinite;
+          animation: cambio 3s infinite;
+}
+
+@-webkit-keyframes cambio {
+  0% {
+    fill: #357a32;
+  }
+  50% {
+    fill: #0d1d0d;
+  }
+  100% {
+    fill: #357a32;
+  }
+}
+
+@keyframes cambio {
+  0% {
+    fill: #357a32;
+  }
+  50% {
+    fill: #0d1d0d;
+  }
+  100% {
+    fill: #357a32;
+  }
+}
+#danger #Vector_17 {
+  -webkit-animation: danger 3s infinite;
+          animation: danger 3s infinite;
+  fill: #090318;
+}
+
+@-webkit-keyframes danger {
+  0% {
+    fill: red;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: red;
+  }
+}
+
+@keyframes danger {
+  0% {
+    fill: red;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: red;
+  }
+}
+#brazoIzquierdo {
+  -webkit-animation: brazoizquierdo 3s infinite;
+          animation: brazoizquierdo 3s infinite;
+  transform-box: fill-box;
+}
+
+#brazoDerecho {
+  -webkit-animation: brazoderecho 3s infinite;
+          animation: brazoderecho 3s infinite;
+  transform-box: fill-box;
+  transform-origin: 70% 20%;
+}
+
+#visto #Vector {
+  -webkit-animation: 3s visto infinite;
+          animation: 3s visto infinite;
+}
+@-webkit-keyframes visto {
+  0% {
+    fill: rgb(62, 21, 158);
+  }
+  50% {
+    fill: yellow;
+  }
+  75% {
+    fill: yellow;
+  }
+  100% {
+    fill: rgb(62, 21, 158);
+  }
+}
+@keyframes visto {
+  0% {
+    fill: rgb(62, 21, 158);
+  }
+  50% {
+    fill: yellow;
+  }
+  75% {
+    fill: yellow;
+  }
+  100% {
+    fill: rgb(62, 21, 158);
+  }
+}
+
+#visto #Vector_42 {
+  -webkit-animation: 3s visto infinite;
+          animation: 3s visto infinite;
+}
+
+#novisto #Vector_46 {
+  fill: red;
+}
+
+#novisto2 #Vector_44 {
+  fill: red;
+}
+
+#speak #Ellipse_2 {
+  fill: rgb(255, 255, 255);
+  -webkit-animation: hablar 1s infinite;
+          animation: hablar 1s infinite;
+}
+@-webkit-keyframes hablar {
+  0% {
+    fill: rgb(255, 255, 255);
+  }
+  50% {
+    fill: none;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+@keyframes hablar {
+  0% {
+    fill: rgb(255, 255, 255);
+  }
+  50% {
+    fill: none;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+
+#speak #Ellipse_1 {
+  fill: rgb(255, 255, 255);
+  -webkit-animation: hablar 2s infinite;
+          animation: hablar 2s infinite;
+}
+@keyframes hablar {
+  0% {
+    fill: none;
+  }
+  50% {
+    fill: rgb(255, 255, 255);
+  }
+  100% {
+    fill: none;
+  }
+}
+
+#speak #Ellipse_3 {
+  fill: rgb(255, 255, 255);
+  -webkit-animation: hablar 2.5s infinite;
+          animation: hablar 2.5s infinite;
+}
+@keyframes hablar {
+  0% {
+    fill: rgb(255, 255, 255);
+  }
+  50% {
+    fill: none;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+
+@-webkit-keyframes cruz {
+  0% {
+    fill: none;
+  }
+  100% {
+    fill: red;
+  }
+}
+
+@keyframes cruz {
+  0% {
+    fill: none;
+  }
+  100% {
+    fill: red;
+  }
+}
+#cruz1 {
+  fill: none;
+  -webkit-animation: cruz 1s infinite;
+          animation: cruz 1s infinite;
+}
+
+#cruz2 {
+  fill: none;
+  -webkit-animation: cruz 1s infinite;
+          animation: cruz 1s infinite;
+}
+
+#recorte {
+  width: 96.5%;
+}
+
+#recorte_2 {
+  width: 100%;
+  height: 81%;
 }/*# sourceMappingURL=style.css.map */
